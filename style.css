@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif; 
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+nav ul li a:hover {
+    background-color: #333; 
+    transition: background-color 0.3s ease;
+}
+.experience-item {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.company-logo {
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+}
+.experience-content h3 {
+    margin-top: 0;
+    color: #000; 
+}
+.experience-content p {
+    margin: 5px 0;
+}
+.date-location {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: #007bff; 
+}
+
+ul, ol {
+    padding-left: 20px;
+    text-align: justify;
+}
+ul li, ol li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+footer {
+    background-color: #000; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p {
+    margin: 5px 0;
+}
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.top-container, .bottom-container{
+    background-color: #D4EDF4;
+    background: linear-gradient(45deg, #D4EDF4, rgba(212, 237, 244, 0));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 100vw;
+    top: 0;
+}
+h2 {
+    margin-bottom: 10px;
+}
+.changing-text {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+}
+.top-container, .mid-container, .bottom-container {
+    padding: 50px 0; 
+}
+.cherry-blossom-img{
+    height: auto; 
+    position: absolute;
+    left: -5%;
+    bottom: 1%;
+    max-width: 30%;
+    height: auto;
+    opacity: 0.6;
+    filter: blur(2px);
+    pointer-events: none;
+}
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #333;
+}
