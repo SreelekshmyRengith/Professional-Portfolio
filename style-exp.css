@@ -1,0 +1,179 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
+    font-family: "Roboto", sans-serif;;
+}
+
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+  .top-container, .experience-item{
+    background-color: #D4EDF4;
+    background: linear-gradient(45deg, #D4EDF4, rgba(212, 237, 244, 0));
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    top: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+nav ul li a:hover {
+    background-color: #333; 
+    transition: background-color 0.3s ease;
+}
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* nav buttons style*/
+.navbar .nav-button {
+    background-color: #0073b1; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+/* Hover effect */
+.navbar .nav-button:hover {
+    background-color: #005582;
+    transform: scale(1.05);
+}
+
+/* Active/Click effect */
+.navbar .nav-button:active {
+    transform: scale(0.95);
+}
+.experience-item {
+    max-width: 85%;
+    margin: 5px auto;
+    /* margin-top: 10px; */
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+    line-height: 30px;
+    text-align: justify;
+}
+.experience-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Slight lift effect */
+    transform: translateY(-3px); /* Move slightly up */
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #000; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p {
+    margin: 5px 0;
+}
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.section-header {
+    text-align: center;
+    font-size: 25px; /* Increase size */
+    font-weight: 800;
+    padding-top: 20px;
+    margin: 50px 0 30px; /* Add space below */
+    margin-top: 60px;
+}
+.company-logo {
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+}
+.experience-content h3 {
+    margin-top: 0;
+    color: #000; 
+}
+.experience-content p {
+    margin: 5px 0;
+}
+.date-location {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: #007bff; 
+}
+.experience-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222; 
+}
+
+.experience-content p strong a {
+    color: #0073b1; /* LinkedIn blue for better visibility */
+    text-decoration: none;
+}
+
+.experience-content p strong a:hover {
+    text-decoration: underline;
+}
+.experience-content ul {
+    padding-left: 25px; /* Indent bullets */
+    line-height: 1.8; /* Add better spacing */
+}
+

@@ -2,18 +2,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-exp.css">
     <title>Sreelekshmy Rengith</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <div class="top-container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="nav-button">Home</a></li>
+                    <!-- <li><a href="experience.html" class="nav-button">Professional Experience</a></li> -->
+                    <li><a href="#" class="nav-button">Education</a></li>
+                    <li><a href="certifications.html" class="nav-button">Certifications</a></li> 
+                    <li><a href="leadership.html" class="nav-button">Leadership & Volunteering</a></li>
+                    <li><a href="#connect" class="nav-button">Get in touch</a></li> 
+                </ul>
+            </nav>               
+        </header>
+    </div>   
+    <div>
+        <section class="section-header">
+            <h2>Professional Experience</h2>
+        </section> 
+    </div>
     <div class="experience-item">
-        <img src="cattlab-logo.jpeg" alt="CATT Lab Logo" class="company-logo">
         <div class="experience-content">
-            <h3>Software Quality Assurance Engineer Intern</h3>
+            <img src="assets/images/cattlab-logo.jpeg" alt="CATT Lab Logo" class="company-logo">
+            <h3>Software Quality Assurance Engineer</h3>
             <p><strong><a href="https://www.cattlab.umd.edu/">Center for Advanced Transportation Technology Lab, UMD</a> </strong></p>
             <p class="date-location">Jan 2024 - Present | College Park, MD</p>
             <ul>
@@ -27,10 +45,10 @@
     </div>
 
     <div class="experience-item">
-        <img src="infosys-logo.png" alt="Infosys Logo" class="company-logo">
         <div class="experience-content">
+            <img src="assets/images/infosys-logo.png" alt="Infosys Logo" class="company-logo">
             <h3>Senior Systems Engineer - ETL Data Warehouse Testing</h3>
-            <p><strong>Infosys Limited</strong></p>
+            <p><strong><a href="https://www.infosys.com/">Infosys Limited</a></strong></p>
             <p class="date-location">Jan 2022 - Apr 2022 | Trivandrum, India</p>
             <ul>
                 <li>SQL Testing for Data Validation: Executed comprehensive SQL test scripts to ensure 100% data accuracy across multiple databases. This involved validating the alignment of database tables with design specifications, confirming data consistency, and identifying discrepancies. By maintaining strict validation protocols, these efforts significantly improved the reliability and integrity of data, which was crucial for downstream analytics and reporting functions.</li> 
@@ -41,10 +59,10 @@
     </div>
 
     <div class="experience-item">
-        <img src="infosys-logo.png" alt="Infosys Logo" class="company-logo">
         <div class="experience-content">
+            <img src="assets/images/infosys-logo.png" alt="Infosys Logo" class="company-logo">
             <h3>Systems Engineer - ETL Data Warehouse Testing</h3>
-            <p><strong>Infosys Limited</strong></p>
+            <p><strong><a href="https://www.infosys.com/">Infosys Limited</a></strong></p>
             <p class="date-location">Nov 2019 - Dec 2021 | Trivandrum, India</p>
             <ul>
                 <li>ETL Testing: Conducted comprehensive ETL testing by retrieving data from multiple source systems, executing ETL procedures, and verifying the accuracy of data transformations to ensure alignment with source-to-target mappings. Implemented rigorous quality checks, which resulted in a 98% data accuracy rate, significantly enhancing overall data reliability and integrity across the ETL pipeline.</li>
@@ -52,21 +70,19 @@
                 <li>Data Migration: Successfully managed the smooth migration of data from 10 diverse client sources into a centralized data warehouse, overseeing the seamless integration of disparate datasets. Ensured consistent data quality across all sources, allowing for accurate and efficient data analysis. This meticulous approach facilitated a unified view of data, supporting better decision-making for clients.</li>
                 <li>Cross-Functional Collaboration: Enabled agile communication and collaboration within cross-functional teams, including developers, data analysts, and project managers, to streamline data migration efforts and refine the Software Development Life Cycle (SDLC) framework. These initiatives led to a 15% increase in workflow efficiency, optimizing business processes and ensuring a more coordinated approach to data management projects.</li>
                 <li>
-                    <img src="award.jpeg" alt="RISE Award" height="150px" width="300px" id="awardImg" style="cursor: pointer;">
+                    <img src="assets/images/award.jpeg" alt="RISE Award" height="150px" width="300px" id="awardImg" style="cursor: pointer;">
                 </li>
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
+
                 </div>
             </ul>
-        </section>   
+        </div> 
+    </div>  
         <footer>
             <section id="connect">
             <p>Connect with me on <a href="https://www.linkedin.com/in/srengith/" target="_blank">LinkedIn</a> | <a href="mailto:srengith@terpmail.umd.edu">Email</a>  
             </p>
             </section>
         </footer>
-
+        <script src="script.js"></script>
 </body>
 </html>

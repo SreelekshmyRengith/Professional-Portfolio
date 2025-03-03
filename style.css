@@ -35,15 +35,6 @@ nav ul li a:hover {
     background-color: #333; 
     transition: background-color 0.3s ease;
 }
-.experience-item {
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
 .company-logo {
     width: 50px;
     float: left;
@@ -94,7 +85,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-.top-container, .bottom-container{
+.top-container{
     background-color: #D4EDF4;
     background: linear-gradient(45deg, #D4EDF4, rgba(212, 237, 244, 0));
     height: 100vh;
@@ -129,7 +120,7 @@ h2 {
     display: block;
     margin: 0 auto 20px;
 }
-.top-container, .mid-container, .bottom-container {
+.top-container, .mid-container {
     padding: 50px 0; 
 }
 .cherry-blossom-img{
@@ -154,4 +145,47 @@ h2 {
     line-height: 1.8;
     font-size: 16px;
     color: #333;
+}
+/* Center the nav bar and remove list styling */
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* nav buttons style*/
+.navbar .nav-button {
+    background-color: #0073b1; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+/* Hover effect */
+.navbar .nav-button:hover {
+    background-color: #005582;
+    transform: scale(1.05);
+}
+
+/* Active/Click effect */
+.navbar .nav-button:active {
+    transform: scale(0.95);
 }
