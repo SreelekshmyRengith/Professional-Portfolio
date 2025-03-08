@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-certifications.css">
+        <title>Sreelekshmy Rengith</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="top-container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="nav-button">Home</a></li>
+                    <li><a href="experience.html" class="nav-button">Professional Experience</a></li>
+                    <li><a href="education.html" class="nav-button">Education</a></li>
+                    <li><a href="leadership.html" class="nav-button">Leadership & Volunteering</a></li>
+                    <li><a href="projects.html" class="nav-button">Projects</a></li>
+                    <li><a href="#connect" class="nav-button">Get in touch</a></li> 
+                    <li><a href="assets/Srengith-Resume.pdf" class="nav-button" download>Resume</a></li>
+                </ul>
+            </nav>               
+        </header>
+    </div>   
+    <div>
+        <section class="section-header">
+            <h2>Certifications</h2>
+        </section> 
+    </div>
+        <div class="certifications-container">
+            <div class="certification-card">
+                <img src="assets/images/aws-solutions.png" alt="AWS Certified Solutions Architect">
+                <h3><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/5d8463bbda4649e5938479d2585dea5b"> AWS Certified Solutions Architect</a></h3>
+                <p>Issued Dec 2024 · Expires Dec 2027</p>
+                <!-- <p>Credential ID: 3b880a11fb574053bebc5da3fab5f9ef</p> -->
+            </div>
+            <div class="certification-card">
+                <img src="assets/images/aws-certified.png" alt="AWS Certified">
+                <h3><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/3b880a11fb574053bebc5da3fab5f9ef"> Certified Cloud Practitioner</a></h3>
+                <p>Issued Jul 2024 · Expires Jul 2027</p>
+                <!-- <p>Credential ID: 3b880a11fb574053bebc5da3fab5f9ef</p> -->
+            </div>
+
+            <div class="certification-card">
+                <img src="assets/images/postman-api.png" alt="Postman API ">
+                <h3><a href="https://badgr.com/public/assertions/v7fPuWcNQTablvJxUJfXLw?identity__email=srengith@umd.edu">Postman API Fundamentals Student Expert</a> </h3>
+                <p>Earned: Dec 2023</p>
+            </div>
+
+            <div class="certification-card">
+                <img src="assets/images/back-end.png" alt="Intro to back-end">
+                <h3><a href="https://www.coursera.org/account/accomplishments/certificate/U7NXCT8BH8PR">Introduction to Back - End Development</a> </h3>
+                <p>Earned: Oct 2023</p>
+            </div>
+
+            <div class="certification-card">
+                <img src="assets/images/algo-trade.png" alt="Algo Trading">
+                <h3><a href="https://www.linkedin.com/learning/certificates/07d80a78e8237f311cfa16ad5c61fbb235ae581ef57c84f94c005191af9ce4f7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BrTQ3OjCtRSqYIEcCbuLVZg%3D%3D">Algorithmic Trading and Stocks Essential Training</a></h3>
+                <p>Earned: Aug 2023</p>
+            </div>
+
+            <div class="certification-card-udemy">
+                <img src="assets/images/python-bootcamp.png" alt="Python Bootcamp">
+                <h3><a href="https://www.udemy.com/certificate/UC-60c28782-0fec-4cca-a010-dc454ceb1f38/">2022 Complete Python Bootcamp</a></h3>
+                <p>Earned: Jul 2022</p>
+            </div>
+        </div>
+
+        <footer>
+            <section id="connect">
+            <p>Connect with me on <a href="https://www.linkedin.com/in/srengith/" target="_blank">LinkedIn</a> | <a href="mailto:srengith@terpmail.umd.edu">Email</a>  
+            </p>
+            </section>
+        </footer>
+    <button id="scrollTopBtn">↑</button>
+
+<script>
+ 
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    };
+
+    scrollTopBtn.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+            }
+        });
+    });
+
+    document.querySelectorAll('.experience-item').forEach(item => {
+        observer.observe(item);
+    });
+</script>
+</body>
+</html>

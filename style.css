@@ -35,40 +35,6 @@ nav ul li a:hover {
     background-color: #333; 
     transition: background-color 0.3s ease;
 }
-.company-logo {
-    width: 50px;
-    float: left;
-    margin-right: 20px;
-}
-.experience-content h3 {
-    margin-top: 0;
-    color: #000; 
-}
-.experience-content p {
-    margin: 5px 0;
-}
-.date-location {
-    font-size: 0.9em;
-    color: #6c757d;
-}
-a {
-    text-decoration: none; 
-    color: inherit; 
-}
-
-a:hover {
-    text-decoration: underline; 
-    color: #007bff; 
-}
-
-ul, ol {
-    padding-left: 20px;
-    text-align: justify;
-}
-ul li, ol li {
-    margin-bottom: 10px;
-    text-align: justify;
-}
 footer {
     background-color: #000; 
     color: #fff;
@@ -178,9 +144,25 @@ h2 {
     transition: background-color 0.3s ease, transform 0.2s ease;
     display: inline-block;
 }
-
 /* Hover effect */
 .navbar .nav-button:hover {
+    background-color: #005582;
+    transform: scale(1.05);
+}
+
+.nav-button {
+    background-color: #0073b1; 
+    color: white;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+.nav-button:hover {
     background-color: #005582;
     transform: scale(1.05);
 }
@@ -188,4 +170,9 @@ h2 {
 /* Active/Click effect */
 .navbar .nav-button:active {
     transform: scale(0.95);
+}
+.coming-soon {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }

@@ -1,0 +1,177 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
+    font-family: "Roboto", sans-serif;;
+}
+
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+  .top-container, .experience-item{
+    background-color: #D4EDF4;
+    background: linear-gradient(45deg, #D4EDF4, rgba(212, 237, 244, 0));
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    top: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+nav ul li a:hover {
+    background-color: #333; 
+    transition: background-color 0.3s ease;
+}
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+/* nav buttons style*/
+.navbar .nav-button {
+    background-color: #0073b1; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+/* Hover effect */
+.navbar .nav-button:hover {
+    background-color: #005582;
+    transform: scale(1.05);
+}
+
+/* Active/Click effect */
+.navbar .nav-button:active {
+    transform: scale(0.95);
+}
+.section-header {
+    text-align: center;
+    font-size: 25px; /* Increase size */
+    font-weight: 800;
+    padding-top: 20px;
+    margin: 50px 0 30px; /* Add space below */
+    margin-top: 60px;
+}
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.certification-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.certification-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+.certification-card h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #000;
+}
+.certification-card p {
+    padding: 0 15px 15px;
+    font-size: 14px;
+    color: #6c757d;
+}
+.certification-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.certification-card-udemy {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 25px;
+}
+.certification-card-udemy img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.certification-card-udemy h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #000;
+}
+.certification-card-udemy p {
+    padding: 0 15px 15px;
+    font-size: 14px;
+    color: #6c757d;
+}
+.certification-card-udemy:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+footer {
+    background-color: #000; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p {
+    margin: 5px 0;
+}
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}

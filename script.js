@@ -20,3 +20,25 @@ window.onscroll = function() {
         scrollTopBtn.style.display = "none";
     }
 };
+
+document.querySelectorAll('.experience-item').forEach(item => {
+    observer.observe(item);
+});
+
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("awardImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
