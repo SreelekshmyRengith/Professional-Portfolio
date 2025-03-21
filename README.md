@@ -1,4 +1,4 @@
-# 💼 Sreelekshmy Renjith – Portfolio Website
+# 💼Portfolio Website
 
 This is the personal portfolio website of **Sreelekshmy Rengith**, a software QA engineer with experience in **Quality Assurance**, **ETL/Data Validation**, and **Cloud-based Applications**. The site showcases selected projects, technical skills, work experience, and contact information in a clean, responsive layout.
 
