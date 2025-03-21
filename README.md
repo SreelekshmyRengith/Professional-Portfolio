@@ -35,6 +35,6 @@ This website serves as a digital resume and portfolio to highlight my technical 
 
 ## 📫 Contact
 
-📧 sreelekshmyrengith@example.com  
+📧 rengith.sreelekshmy@gmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/srengith/)  
 
